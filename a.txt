@@ -1,0 +1,58 @@
+created suing go keyword 
+
+placed in run queue 
+schduled by runtime 
+excuted
+
+ends when function return 
+
+go scheduleer has 3 component - 
+
+GMP 
+g- go routine 
+m-  os thread (machine)
+p- processor 
+
+pick goroutine
+assign to a thread
+thread excute the goroutine
+thread return to pool
+
+features of go language - 
+
+1. very low cost of creation
+2. stack size is 2kb  
+3. managed by go runtime 
+4. 
+
+Go routine are powerful -
+ network servers 
+ high througghput api 
+ concurrent processign 
+ cloud native system
+
+if one go routine fails to do work which i take during maye take 
+ - 
+
+Buffered channel -
+  normal channel waits untill somone receive 
+  Buffered channel can store limited message 
+
+
+sync.waitGroup 
+waitGroup waits for multiple goroutines to finish
+without it - main  function exits early 
+
+Mutex -
+mutex prevent  multipe goroutines from changing the same data at same time
+
+var mu sync.Mutex
+
+mu.lock()
+counter++
+mu.Unlock()
+
+select{
+    case msg :=<-ch1
+    fmt.print("")
+}
